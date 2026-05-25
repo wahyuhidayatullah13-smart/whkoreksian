@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koreksian WH - AI OMR Localhost</title>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+eof
+
+---
+
+### 🚀 Cara Menjalankan Aplikasi Ini di Localhost Anda:
+
+Silakan ikuti 4 langkah mudah berikut di komputer Anda:
+
+1. **Buat Folder Proyek:**
+   Buat sebuah folder baru di komputer Anda dengan nama `koreksian-wh`.
+
+2. **Simpan Berkas-Berkas:**
+   * Simpan kode konfigurasi `package.json`, `tailwind.config.js`, dan `index.html` dari blok di atas ke dalam folder tersebut.
+   * Buat subfolder bernama `src` di dalam folder tersebut.
+   * Salin kode React utama Anda yang ada di tab sebelah kanan (**App.jsx**) dan simpan di dalam folder `src/App.jsx`.
+   * Di dalam folder `src`, buat file baru bernama `main.jsx` berisi kode penarik React standar:
+     ```javascript
+     import React from 'react'
+     import ReactDOM from 'react-dom/client'
+     import App from './App.jsx'
+     import './index.css'
+
+     ReactDOM.createRoot(document.getElementById('root')).render(
+       <React.StrictMode>
+         <App />
+       </React.StrictMode>,
+     )
+     ```
+   * Di dalam folder `src`, buat file baru bernama `index.css` berisi baris import Tailwind CSS:
+     ```css
+     @tailwind base;
+     @tailwind components;
+     @tailwind utilities;
+     ```
+
+3. **Instal Dependensi (Memerlukan Node.js terinstal di komputer Anda):**
+   Buka terminal/CMD, arahkan ke folder proyek, dan jalankan perintah:
+   ```bash
+   npm install
+   ```
+
+4. **Jalankan Server Lokal (*Localhost*):**
+   Ketik perintah berikut di terminal Anda:
+   ```bash
+   npm run dev
